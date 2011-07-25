@@ -7,7 +7,7 @@ class Bravia::API < Grape::API
     end
 
     get ':id' do
-      Project.find params[:id]
+      $redis.get params[:id]
     end
   end
 

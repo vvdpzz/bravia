@@ -6,6 +6,10 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-10.times do
-  Project.create(:name => 'Project benchmark')
+# 10.times do
+#   Project.create(:name => 'Project benchmark')
+# end
+
+Project.all.each do |project|
+  $redis.set(project.id, project.to_json)
 end
