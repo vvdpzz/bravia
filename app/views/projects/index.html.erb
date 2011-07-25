@@ -1,0 +1,29 @@
+<div id="content"></div>
+
+<script id="template" type="text/x-handlebars-template">
+{{#each projects}}
+<p>
+	<a href="/projects/{{id}}">{{name}}</a>
+</p>
+{{/each}}
+</script>
+
+<script id="render" type="text/javascript">
+Handlebars.registerHelper('each', function(context, block) {
+  var ret = "";
+  for(var i=0, j=context.length; i<j; i++) {
+    ret = ret + block(context[i]);
+  }
+  return ret;
+});
+
+$.getJSON('/projects.json', function(projects) {
+	var source   = $("#template").html();
+	var template = Handlebars.compile(source);
+	var compiled = template(projects);
+
+	$('#content').html(compiled);
+	$('#template').remove();
+	$('#render').remove();
+});
+</script>
