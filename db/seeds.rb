@@ -10,6 +10,6 @@
 #   Project.create(:name => 'Project benchmark')
 # end
 
-Project.all.each do |project|
-  $redis.set(project.id, project.to_json)
-end
+# Project.all.each do |project|
+#   $redis.set(project.id, project.to_json)
+# end
