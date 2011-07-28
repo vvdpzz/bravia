@@ -1,0 +1,10 @@
+textarea{
+  border:1px solid #ddd;
+}
+.lx-q-title{
+  height:10em;
+  resize:none;
+}
+.lx-q-content{
+  height:20em;
+}

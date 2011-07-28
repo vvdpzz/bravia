@@ -8,13 +8,27 @@ gem "rake", '0.8.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '~> 0.2.6'
+
+gem 'hiredis'
 gem 'redis'
+
 gem 'SystemTimer'
 gem 'devise'
 gem 'json'
 gem 'jquery-rails'
+
+# realtime push
 gem 'pusher'
+
+# API grneration
 gem 'grape'
+
+gem 'uuidtools'
+
+# background job
+gem 'resque'
+
+gem 'compass'
 
 # Use unicorn as the web server
 # gem 'unicorn'
