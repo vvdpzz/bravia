@@ -1,10 +1,20 @@
+<<<<<<< HEAD
+=======
+<%= javascript_include_tag 'showdown', 'wmd' %>
+>>>>>>> blueprint
 <div id="content">
 	<%= form_for(@question) do |f| %>
 	<div class="lx-row">
 		<%= f.text_area :title, :class => 'lx-q-title' %>
 	</div>
 	<div class="lx-row">
+<<<<<<< HEAD
 		<%= f.text_area :content, :class => 'lx-q-content' %>
+=======
+		<div id="wmd-button-bar"></div>
+		<%= f.text_area :content, :class => 'lx-q-content', :id => 'wmd-input' %>
+		<div id="wmd-preview"></div>
+>>>>>>> blueprint
 	</div>
 	<div class="lx-row">
 		<%= f.submit %>
