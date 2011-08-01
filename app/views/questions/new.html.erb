@@ -1,11 +1,16 @@
-<%= form_for(@question) do |f| %>
-	<p>
+<%= javascript_include_tag 'showdown', 'wmd' %>
+<div id="content">
+	<%= form_for(@question) do |f| %>
+	<div class="lx-row">
 		<%= f.text_area :title, :class => 'lx-q-title' %>
-	</p>
-	<p>
-		<%= f.text_area :content, :class => 'lx-q-content' %>
-	</p>
-	<p>
+	</div>
+	<div class="lx-row">
+		<div id="wmd-button-bar"></div>
+		<%= f.text_area :content, :class => 'lx-q-content', :id => 'wmd-input' %>
+		<div id="wmd-preview"></div>
+	</div>
+	<div class="lx-row">
 		<%= f.submit %>
-	</p>
+	</div>
 <% end %>
+</div>

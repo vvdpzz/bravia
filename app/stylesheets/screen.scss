@@ -1,0 +1,81 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+@import "partials/wmd";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+@import "compass/css3/box-sizing";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/border-radius";
+
+// To generate css equivalent to the blueprint css but with your
+// configuration applied, uncomment:
+// @include blueprint
+
+// If you are doing a lot of stylesheet concatenation, it is suggested
+// that you scope your blueprint styles, so that you can better control
+// what pages use blueprint when stylesheets are concatenated together.
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+}
+
+form.bp {
+  @include blueprint-form;
+  // You'll probably want to remove the scaffolding once you start styling your site.
+  @include blueprint-scaffolding; }
+
+body.two-col {
+  #container {
+    @include container; }
+  #header, #footer {
+    @include column($blueprint-grid-columns); }
+  #sidebar {
+    $sidebar-columns: floor($blueprint-grid-columns / 3);
+    @include column($sidebar-columns, true); }
+  #content {
+    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
+    @include column($content-columns); } }
+
+$mono_fonts: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+
+textarea{
+  resize:none;
+  border:1px solid #ddd;
+  @include box-sizing(border-box);
+  font-family: $mono_fonts;
+}
+.lx-row{
+  padding:10px;
+}
+.lx-row textarea{
+  width:100%;
+}
+.lx-q-title{
+  height:3em;
+  
+  font-size:16px;
+}
+.lx-q-content{
+  height:14em;
+  font-size:14px;
+}
+#wmd-preview{
+	border:2px dashed #ccc;
+	display:block;
+	font-family: $mono_fonts;
+	font-size:14px;
+	padding:2px;
+}
