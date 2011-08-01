@@ -6,9 +6,12 @@ class Bravia::API < Grape::API
       Project.all
     end
 
+    get :hello do 
+        Project.first
+    end
+    
     get ':id' do
       $redis.get params[:id]
     end
   end
-
 end
