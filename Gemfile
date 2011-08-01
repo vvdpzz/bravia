@@ -31,6 +31,19 @@ gem 'resque'
 
 gem 'compass'
 
+# Redcarpet is a Ruby wrapper for Upskirt
+# Upskirt is a very fast markdown parser written in C
+# https://github.com/tanoku/redcarpet
+# for more syntax guide: http://github.github.com/github-flavored-markdown/
+gem 'redcarpet'
+
+# Albino: a ruby wrapper for pygmentize
+# DO NOT forget install pygmentize for dependencies
+# just type: sudo easy_install pygments
+gem 'albino'
+
+gem 'nokogiri'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
