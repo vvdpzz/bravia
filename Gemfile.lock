@@ -139,6 +139,7 @@ DEPENDENCIES
   hiredis
   jquery-rails
   json
+  multi_json
   mysql2 (~> 0.2.6)
   nokogiri
   pusher

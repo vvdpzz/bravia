@@ -57,191 +57,7 @@ a img {
   border: none;
 }
 
-/* line 1, ../../app/stylesheets/partials/_wmd.scss */
-pre {
-  border: 1px solid #DEDEDE;
-  background-color: ghostWhite;
-  overflow: auto;
-}
-
-/* line 6, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar {
-  width: 100%;
-  background-color: white;
-}
-
-/* line 10, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-row {
-  position: relative;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  padding: 0px;
-  height: 20px;
-}
-
-/* line 19, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-spacer {
-  width: 1px;
-  height: 20px;
-  margin-left: 14px;
-  position: absolute;
-  background-color: Silver;
-  display: inline-block;
-  list-style: none;
-}
-
-/* line 29, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-button {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  position: absolute;
-  background-image: url(/images/wmd-buttons.png);
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  display: inline-block;
-  list-style: none;
-}
-
-/* line 42, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-button > a {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  position: absolute;
-  display: inline-block;
-}
-
-/* sprite button slicing style information */
-/* line 54, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-bold-button {
-  left: 0px;
-  background-position: 0px 0;
-}
-
-/* line 55, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-italic-button {
-  left: 25px;
-  background-position: -20px 0;
-}
-
-/* line 56, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-spacer1 {
-  left: 50px;
-}
-
-/* line 57, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-link-button {
-  left: 75px;
-  background-position: -40px 0;
-}
-
-/* line 58, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-quote-button {
-  left: 100px;
-  background-position: -60px 0;
-}
-
-/* line 59, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-code-button {
-  left: 125px;
-  background-position: -80px 0;
-}
-
-/* line 60, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-image-button {
-  left: 150px;
-  background-position: -100px 0;
-}
-
-/* line 61, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-spacer2 {
-  left: 175px;
-}
-
-/* line 62, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-olist-button {
-  left: 200px;
-  background-position: -120px 0;
-}
-
-/* line 63, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-ulist-button {
-  left: 225px;
-  background-position: -140px 0;
-}
-
-/* line 64, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-heading-button {
-  left: 250px;
-  background-position: -160px 0;
-}
-
-/* line 65, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-hr-button {
-  left: 275px;
-  background-position: -180px 0;
-}
-
-/* line 66, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-spacer3 {
-  left: 300px;
-}
-
-/* line 67, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-undo-button {
-  left: 325px;
-  background-position: -200px 0;
-}
-
-/* line 68, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-redo-button {
-  left: 350px;
-  background-position: -220px 0;
-}
-
-/* line 69, ../../app/stylesheets/partials/_wmd.scss */
-#wmd-button-bar #wmd-help-button {
-  right: 0px;
-  background-position: -240px 0;
-}
-
-/* line 72, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-prompt-background {
-  background-color: Black;
-}
-
-/* line 76, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-prompt-dialog {
-  border: 1px solid #999999;
-  background-color: #F5F5F5;
-}
-
-/* line 81, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-prompt-dialog > div {
-  font-size: 0.8em;
-  font-family: arial, helvetica, sans-serif;
-}
-
-/* line 87, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-prompt-dialog > form > input[type="text"] {
-  border: 1px solid #999999;
-  color: black;
-}
-
-/* line 92, ../../app/stylesheets/partials/_wmd.scss */
-.wmd-prompt-dialog > form > input[type="button"] {
-  border: 1px solid #888888;
-  font-family: trebuchet MS, helvetica, sans-serif;
-  font-size: 0.8em;
-  font-weight: bold;
-}
-
-/* line 26, ../../app/stylesheets/screen.scss */
+/* line 24, ../../app/stylesheets/screen.scss */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -677,14 +493,14 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 41, ../../app/stylesheets/screen.scss */
+/* line 39, ../../app/stylesheets/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 43, ../../app/stylesheets/screen.scss */
+/* line 41, ../../app/stylesheets/screen.scss */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -695,7 +511,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 45, ../../app/stylesheets/screen.scss */
+/* line 43, ../../app/stylesheets/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -706,7 +522,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 48, ../../app/stylesheets/screen.scss */
+/* line 46, ../../app/stylesheets/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
@@ -718,7 +534,7 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 54, ../../app/stylesheets/screen.scss */
+/* line 52, ../../app/stylesheets/screen.scss */
 textarea {
   resize: none;
   border: 1px solid #ddd;
@@ -729,33 +545,24 @@ textarea {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
-/* line 60, ../../app/stylesheets/screen.scss */
+/* line 58, ../../app/stylesheets/screen.scss */
 .lx-row {
   padding: 10px;
 }
 
-/* line 63, ../../app/stylesheets/screen.scss */
+/* line 61, ../../app/stylesheets/screen.scss */
 .lx-row textarea {
   width: 100%;
 }
 
-/* line 66, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/stylesheets/screen.scss */
 .lx-q-title {
   height: 3em;
   font-size: 16px;
 }
 
-/* line 71, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/stylesheets/screen.scss */
 .lx-q-content {
   height: 14em;
   font-size: 14px;
-}
-
-/* line 75, ../../app/stylesheets/screen.scss */
-#wmd-preview {
-  border: 2px dashed #ccc;
-  display: block;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: 14px;
-  padding: 2px;
 }

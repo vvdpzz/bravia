@@ -9,17 +9,30 @@ class QuestionsController < ApplicationController
   
   def create
     question = Question.new(params[:question])
+    
+    # asker information
+    question.user_id = current_user.id
+    question.username = current_user.username
+    
+    # UNIX Timestamp
+    question.created_at = question.updated_at = Time.now.to_i
+    
+    # use redcarpet to render context
     question.markdown = Helper.markdown(question.content)
-    uuid = UUIDTools::UUID.random_create.to_s.gsub('-','').hex
-    question.id = uuid
-    $redis.set("questions:#{uuid}", question.to_json)
+    
+    # TODO: wait to use real UUID
+    uuid = $redis.incr 'next.question.id'
+    
+    # serialize it into json
+    serialized_data = MultiJson.encode(question.serializable_hash)
+    
+    # write into redis
+    $redis.set("questions:#{uuid}", serialized_data)    
+    
     redirect_to "/questions/#{uuid}"
   end
   
   def show
-    @question = $redis.get("questions:#{params[:id]}")
-    @question = JSON.parse(@question)
-    puts @question[:markdown]
   end
   
   def edit

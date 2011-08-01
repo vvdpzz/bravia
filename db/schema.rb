@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20110728062329) do
 
   create_table "questions", :force => true do |t|
     t.integer  "user_id"
-    t.string   "user_name"
+    t.string   "username"
     t.string   "title"
     t.text     "content"
     t.text     "markdown"

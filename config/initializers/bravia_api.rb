@@ -1,17 +1,13 @@
 class Bravia::API < Grape::API
   prefix 'api'
 
-  resource 'projects' do
+  resource 'questions' do
     get do
-      Project.all
+      Question.all
     end
-
-    get :hello do 
-        Project.first
-    end
-    
+        
     get ':id' do
-      $redis.get params[:id]
+      $redis.get("questions:#{params[:id]}")
     end
   end
 end

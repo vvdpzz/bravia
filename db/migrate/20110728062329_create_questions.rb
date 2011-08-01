@@ -2,7 +2,7 @@ class CreateQuestions < ActiveRecord::Migration
   def self.up
     create_table :questions do |t|
       t.references :user
-      t.string :user_name
+      t.string :username
       t.string :title
       t.text :content
       t.text :markdown

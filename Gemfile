@@ -31,6 +31,8 @@ gem 'resque'
 
 gem 'compass'
 
+gem 'multi_json'
+
 # Redcarpet is a Ruby wrapper for Upskirt
 # Upskirt is a very fast markdown parser written in C
 # https://github.com/tanoku/redcarpet

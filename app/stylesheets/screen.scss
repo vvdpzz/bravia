@@ -4,8 +4,6 @@
 // To configure blueprint, edit the partials/base.sass file.
 @import "partials/base";
 
-@import "partials/wmd";
-
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
@@ -71,11 +69,4 @@ textarea{
 .lx-q-content{
   height:14em;
   font-size:14px;
-}
-#wmd-preview{
-	border:2px dashed #ccc;
-	display:block;
-	font-family: $mono_fonts;
-	font-size:14px;
-	padding:2px;
 }
